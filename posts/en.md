@@ -6,7 +6,7 @@ _Welcome to the info webpage for our wedding. We are glad to invite you to our s
 
 # General Info
 
-- Please [let us](mailto:magda.murawiecka@gmail.com) know as soon as possible if you are coming and the if you want to come with girlfriend/boyfriend/kids/husband/wife/or else
+- Please [let us know](mailto:magda.murawiecka@gmail.com) as soon as possible if you are coming and the if you want to come with girlfriend/boyfriend/kids/husband/wife/or else
 
 ## What
 
@@ -35,7 +35,7 @@ _Welcome to the info webpage for our wedding. We are glad to invite you to our s
 
 ## Car
 
-- Just [drive](https://goo.gl/maps/pNnWszmpXtveqbR58) straight through the autobahn at max speed 🏎💨, but make a pause for [Curry wursts](https://media-cdn.tripadvisor.com/media/photo-s/0e/e4/fe/7f/currywurst-normal-und.jpg) or [Schweinshaxes](https://thumbs.dreamstime.com/z/schweinshaxe-pork-knuckle-bavarian-44736198.jpg), and a night's rest. (around 13h if you drive at the limit and without pause, so you'll have to sleep on the way)
+- Just [drive](https://goo.gl/maps/pNnWszmpXtveqbR58) straight through the autobahn at max speed 🏎💨, but make a pause for [Curry wursts](https://media-cdn.tripadvisor.com/media/photo-s/0e/e4/fe/7f/currywurst-normal-und.jpg), and a night's rest. (around 13h if you drive at the limit and without pause, so you'll have to sleep on the way)
 
 # Where to stay
 
