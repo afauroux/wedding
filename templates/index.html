@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  {%include 'head.html' %}
+
+  <body>
+
+  <header>
+    <h2>{{blogTitle}}<img src="static/icons/favicon.ico" class="vanicon" style="padding-left:10px;" alt="the van"</h2>
+  </header>
+  
+  <div class="row">
+    {% include 'navbar.html' %}
+    <section class="main home">
+      {% for post in posts %}
+        <article name="{{ post.title[0] }}" class="row card {{ post.category[0] }}">
+          <a href="{{ post.rel_link }}">
+            <figure>
+              <img src="{{ post.image[0] }}" loading="lazy" class="thumbnail" alt="{{ post.title[0] }} Thumbnail">
+            </figure>
+            <h2 class="post-title">{{ post.title[0] }}</h2>
+            <h5 class="post-descr row"> 
+              <div class="descr" ><img src="static/icons/date.svg" class="icon" alt="date">{{ post.published[0] }}</div>
+              <div class="descr" ><img src="static/icons/clock.svg" class="icon" alt="read time">{{ post.estimated_reading_time[0] }} min</div>
+              <div class="descr" ><img src="static/icons/user.svg" class="icon" alt="author">{{post.author[0]}}</div>
+            </h5>
+          </a>
+        </article>
+      {% endfor %}
+    </section>
+  <div class="right">
+  {% include 'darkmode.html' %}
+</div>
+  </div>
+  <script>
+
+    var cards = document.getElementsByClassName('card');
+
+    //get the category
+    const category = window.location.hash.replace('#','');
+    window.onhashchange = function() {
+        console.log('hash changed');
+        window.location.reload()
+    }
+
+
+    console.log('the category is '+category)
+    for(let c of cards){
+      console.log(c.name)
+      if(c.classList.contains(category) || category==""){
+        c.style.display = "block";
+        console.log("yes")
+      }else{
+        c.style.display = "none";
+        console.log("no ")
+      }
+    }
+  </script>
+  </body>
+</html>

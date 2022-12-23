@@ -1,0 +1,243 @@
+* {
+    box-sizing: border-box;
+    text-decoration:none;
+}
+:root {
+    --font-color: #000; /*w424242;*/
+    --bg-color: #f5f5fa;
+    --links-color: #4e5de2;
+    --nav-hover-font-color: rgb(255, 255, 255);
+    --nav-hover-bg-color: rgb(105, 93, 93);
+    --nav-selected: lightgray;
+    --caption-color: #807e7e;
+    --title-color: #000;
+    --icon-color-invert:0;
+
+}
+[data-theme="dark"] {
+    --font-color: #e1e1ff; 
+    --bg-color: #161625;
+    --links-color: #4e5de2;
+    --nav-hover-font-color: #161625;
+    --nav-hover-bg-color: #818cab;
+    --nav-selected: #818cab;
+    --caption-color: #9A97F3;
+    --title-color: #818cab;
+    --icon-color-invert:1;
+
+}
+
+body {
+  margin: 0;
+  font: 18px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: var(--font-color);
+  background-color: var(--bg-color);
+}
+
+header{
+    text-align:center;
+    margin:5px;
+}
+/* Style the top navigation bar */
+nav {
+overflow: hidden;
+}
+
+/* Style the navigation bar links */
+nav a {
+display: block;
+color: var(--font-color);
+text-align: left;
+padding: 14px 20px 14px 40px;
+}
+
+nav a em{
+    padding-left:5px;
+}
+
+/* Change color on hover */
+nav a:hover {
+background-color: var(--nav-hover-bg-color);
+color: var(--nav-hover-font-color);
+}
+
+a:focus {
+    outline:none;
+}
+
+/* round avatar*/
+.site-avatar{
+border-radius:50%;  
+width:120px;
+height:120px;
+margin:20px;
+margin-bottom:0px;
+
+}
+
+.about_descr{
+    color: var(--caption-color);
+    text-align: center;
+    padding: 0px 20px 0px 20px;
+    font-style: italic;
+}
+
+.email{
+    color: var(--links-color);
+    text-align: center;
+    padding: 14px 0px 14px 0px;
+}
+/* Column container */
+.row {  
+display: flex;
+flex-wrap: nowrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.left {
+flex: 20%;
+text-align: center;
+
+}
+
+/* Main column */
+.main {   
+flex:70%;
+padding:20px;
+}
+
+.right {
+  flex: 10%;
+  display: flex;
+  justify-content: right;
+  padding:10px;
+  height: 40px;
+
+}
+
+div#google_translate_element {
+    padding: 10px;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+.row {   
+    flex-direction: column-reverse;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+}
+}
+
+.card {
+  border-radius: 10px;
+  margin:0px;
+  margin-bottom: 20px;
+  padding: 0px;
+  overflow:hidden;
+  position: relative;
+  width: 100%;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+figure{
+overflow: hidden;
+width:100%;
+height:250px;
+margin:0px;
+display:flex;
+align-items:center;
+
+}
+
+.thumbnail{
+    width:100%;
+
+}
+
+.main{
+    padding:20px;
+    justify-content: center;
+}
+.main p{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home img{
+    object-position: center; /* Center the image within the element */
+}
+.post img{
+    object-position: center; /* Center the image within the element */
+    max-height: 80vh;
+    max-width: 100%;
+    width: auto;
+    align-self: center;
+ }
+
+ .post video{
+    max-height: 80vh;
+    max-width: 100%;
+    width: auto;
+    align-self: center;
+    padding-bottom: 10px;
+ }
+
+.caption{
+    text-align:center;
+    color: var(--caption-color);
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+}
+
+
+.expended{
+padding:10px;
+}
+.expended img{
+width:100%;
+}
+ 
+.icon{
+  vertical-align: middle;
+  height:1.5em;
+  padding:2px;
+  margin-right:2px;
+  width:none;
+  filter: invert(var(--icon-color-invert));
+}
+
+.vanicon{
+  vertical-align: middle;
+  height:1.5em;
+  padding:2px;
+  margin-right:2px;
+  width:none;
+}
+
+.post-title{
+    margin:5px;
+    color: var(--title-color);
+}
+.descr {
+    margin: 10px;
+    display:flex;
+    justify-content: left;
+    align-items: center;
+}
+.post-descr{
+
+    margin:10px;
+    color: var(--font-color)
+}

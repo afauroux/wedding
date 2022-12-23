@@ -1,0 +1,30 @@
+<div class="left">
+    <!--copypasted block for gtranslate -->
+    <div id="google_translate_element"></div>
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({
+                    pageLanguage: 
+                        'en', 
+                        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                    }, 'google_translate_element'
+                    );
+            }
+    </script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"></script>
+    <!--end copypaste-->
+    <nav>
+    <a class="menu" id="en" href="afaurou.github.io/"><b>🇬🇧 English</b></a>
+    <a class="menu" id="fr" href="afaurou.github.io/"><b>🇫🇷 Français</b></a>
+    <a class="menu" id="pl" href="afaurou.github.io/"><b>🇵🇱 Polski</b></a>
+    </nav>
+    <script>
+
+        //get the home (baseurl) address
+        var pagename = window.location.href.split('/')[0].toString();
+        for (var elem of document.getElementsByClassName("menu")) {
+            elem.href = window.location.href.replace(/\w+\.html/, elem.id+".html")
+        }
+    
+    </script>
+</div>

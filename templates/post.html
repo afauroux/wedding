@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      <title>{{title[0]}}</title>
+      <link rel="stylesheet" href="static/css/style.css">
+      <link rel="icon" href="static/icons/favicon.ico" type="image/x-icon">
+      <meta property='og:title' content='{{title[0]}}'>
+      <meta property='og:image' content='{{image[0]}}'>
+      <meta property='og:description' content='{{description[0]}}'>
+      <meta property='og:url' content='{{baseURL+"/"+url.replace(" ","%20") }}'> 
+      <meta property='og:site_name' content='{{title[0]}}'>
+      <meta property='og:type' content='website'>
+      <meta property='og:updated_time' content='{{ published[0] }}'/>
+      <meta name="twitter:title" content="{{title[0]}}">
+      <meta name="twitter:description" content="{{description[0]}}">
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-55T9937527"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-55T9937527');
+      </script>
+    </head>
+  <body>
+  <header>
+    <h2>{{ title[0] }}</h2>
+  </header>
+  <div class="row">
+    {% include 'navbar.html' %}
+    <section class="main card post">
+      
+        {{ content | safe }}
+        
+    </section>
+    <div class="right">{% include 'darkmode.html' %}</div>
+  </div>
+
+  <script>
+    for(let image of document.getElementsByTagName("img")){
+     
+      image.loading="lazy";
+      var caption = document.createElement('span');
+      caption.innerHTML = image.alt+" ";
+      caption.classList.add("caption");
+      
+      image.parentNode.insertBefore(caption, image.nextSibling);
+      
+      /*if(image.parentElement.tagName=='P'){
+        let p = image.parentElement
+        let a = document.createElement('a')
+        a.href = image.src
+        p.removeChild(image)
+        p.appendChild(a)
+        a.appendChild(image)
+        p.appendChild(caption);
+      }*/
+    
+    }
+
+  </script>
+  
+
+  </body>
+</html>

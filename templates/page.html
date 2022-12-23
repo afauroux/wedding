@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  {%include 'head.html' %}
+
+  <body>
+
+  <header>
+    <h2>{{blogTitle}}</h2>
+  </header>
+
+  <div class="row">
+    {% include 'navbar.html' %}
+    <section class="main card post">
+
+      {{ content | safe }}
+
+    </section>
+    <div class="right">{% include 'darkmode.html' %}</div>
+  </div>
+
+  </body>
+</html>
