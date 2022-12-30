@@ -2,7 +2,10 @@ import markdown
 import jinja2
 import os
 import re
+from datetime import datetime
+from email.utils import formatdate, format_datetime  # for RFC2822 formatting
 from pathlib import Path
+import yaml
 
 ROOT = Path(__file__).parent.parent
 
@@ -31,6 +34,10 @@ def generate():
     for post in posts:
         print(f"rendering {post}")
         
+        # retrieving the config infos
+        config = yaml.load(Path("config.yaml").read_text(), Loader=yaml.FullLoader)
+        config['updatedTime'] = str(datetime.now())
+        
         url = f"{post.stem}.html"
         target_file = ROOT / url
         
@@ -39,17 +46,22 @@ def generate():
         content = post.read_text()
 
         html = _md.convert(content)
+        post_date = datetime.now().strftime("%d/%m/%y")
 
 
         doc = env.get_template(PAGE_TEMPLATE_FILE).render(
             content=html,
             baseurl=BASE_URL,
-            url=url
+            url=url,
+            date=post_date,
+            **config
         )
 
         # Writing the post html
         doc = no_p_markdown(doc)
         target_file.write_text(doc)
+        
+        
         
         
 if __name__ == "__main__":
