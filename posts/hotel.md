@@ -1,6 +1,6 @@
 # Wedding of Magda and Antoine
 
-_Welcome to the info webpage for our wedding. We are glad to invite you to our special day, to share our joy and celebrate love and happiness ! 🍾 🥳 ❤️_ 
+_Welcome to the info webpage for our wedding. We are glad to invite you to our special day, to share our joy and celebrate love and happiness ! 🍾 🥳 ❤️
 
 ![Arctic Ocean pic](static/images/ArticOcean.jpg)
 
