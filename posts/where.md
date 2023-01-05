@@ -1,6 +1,6 @@
-Ir is our pleasure to invite you to Dwór Wierzenica, located in the small village of Wierzenica, north-east from Poznań. It's a XIX century manor located on the edge of Zielonka forest.
+It is our pleasure to invite you to Dwór Wierzenica, located in the small village of Wierzenica, north-east from Poznań. It's a XIX century manor located on the edge of Zielonka forest.
 
-The ceremony will start at 16.45, and the reception soon afterwards.
+The ceremony will take place on [3rd of June at 16:45](static/files/iCal-wedding_Magda_Antoine.ics), and the reception will start soon afterwards.
  
 Dwór Wierzenica is reachable by a short drive from the center of Poznań. We will organize the transport for those of you who need it (details soon).
  
