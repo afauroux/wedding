@@ -1,4 +1,6 @@
-W tym szczególnym dniu pragniemy ugościć Was w Dworze Wierzenica, położonym na skraju Puszczy Zielonki na północny zachód od Poznania. Ceremonia rozpocznie się o godzinie 16.45, a wesele zaraz po niej.
+W tym szczególnym dniu pragniemy ugościć Was w Dworze Wierzenica, położonym na skraju Puszczy Zielonki na północny zachód od Poznania. 
+
+Ceremonia odbędzie się [3-go czerwca o 16:45](static/files/iCal-wedding_Magda_Antoine.ics), a wesele rozpocznie się wkrótce po niej.
 
 Dojazd do Dworu z centrum Poznania zajmuje ok. 20 minut. Zorganizujemy transport dla tych z Was, którzy będą tego potrzebować (szczegóły wkrótce). 
 
