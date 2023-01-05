@@ -5,12 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
-  <title>My Website</title>
+  <title>Mariage de Magda & Antoine</title>
 
   <style>
     html,
@@ -21,39 +16,44 @@
       height: 100%;
     }
   </style>
+  <!-- Link css file -->
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
-    <div class="container">
-      <!-- Navbar Brand-->
-      <!-- Navbar Buttons -->
-      <div style="font-family:cursive;" class="navbar-nav bg-dark fixed-top justify-content-around">
-        <a class="nav-item nav-link active" href="#index_fr">Mariage de Magda & Antoine</a>
-        <a class="nav-item nav-link active" href="#where">Où</a>
-        <a class="nav-item nav-link" href="#when">Quand</a>
-        <a class="nav-item nav-link" href="#reaching">Comment s'y rendre</a>
-        <a class="nav-item nav-link" href="#hotel">Hotel</a>
-        <a class="nav-item nav-link" href="#see">Visiter Poznań</a>
-        <a class="nav-item nav-link" href="#lang">Basic Polish</a>
-      </div>
-    </div>
-  </nav>
+  <!-- Navigation bar -->
+  <header class="header">
+
+    <!-- L↑ogo -->
+    <a class="logo" id="index" href="#index_fr">Magda & Antoine's
+      Wedding</a>
+    <!-- Hamburger icon -->
+    <input class="side-menu" type="checkbox" id="side-menu" />
+    <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+
+    <!-- Menu -->
+    <nav class="nav">
+      <ul class="menu">
+        <li><a class="nav-item nav-link active" href="#ou">Où</a></li>
+        <li><a class="nav-item nav-link" href="#quand">Quand</a></li>
+        <li><a class="nav-item nav-link" href="#rendre">S'y rendre</a></li>
+        <li><a class="nav-item nav-link" href="#hotel">Hotel</a></li>
+        <li><a class="nav-item nav-link" href="#see">Visiter Poznań</a></li>
+        <li><a class="nav-item nav-link" href="#lang">Rappel Polonais</a></li>
+      </ul>
+    </nav>
+  </header>
+
 
   <!-- Page Content -->
   <iframe width="100%;" height="100%;" id="main" src="index.html">
   </iframe>
 
   <!-- Footer -->
-  <footer class="bg-dark fixed-bottom py-4">
-    <div class="container">
-      <!-- Footer Form -->
-      <form class="form-inline justify-content-center">
-        <input class="form-control mr-2" type="text" placeholder="Enter your email">
-        <button class="btn btn-primary" type="submit">Send</button>
-      </form>
-    </div>
+  <footer class="footer">
+    <button onclick="sendEmail()" class="btn-send-email">
+      Pour des mises à jour sur l'organisation du mariage Envoyez-nous votre Email
+    </button>
   </footer>
 
 
@@ -66,7 +66,26 @@
       console.log(adr);
       var source = adr + ".html";
       iframe.setAttribute('src', source);
+
+      for (let e of document.getElementsByClassName("nav-item")) {
+        e.classList.remove("active")
+      }
+      //let o = document.getElementsByName(adr);
+      //o.classList.add("active")
+
+      document.getElementById("side-menu").checked = false;
     };
+
+    function sendEmail() {
+      window.location.href = 'mailto:magda.murawiecka@gmail.com?subject=Bonjour&body=Bonjour :-) Je suis heureux d annoncer que je serai là pour votre mariage !';
+    }
+
+    $('.first-button').on('click', function () {
+
+      $('.animated-icon1').toggleClass('open');
+    });
+
+
   </script>
 
 </body>
