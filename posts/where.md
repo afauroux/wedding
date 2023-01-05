@@ -1,4 +1,4 @@
-For this special day, we invite you to Dwór Wierzenica, located in the small village of Wierzenica, north-east from Poznań. It's a XIX century manor located on the edge of Zielonka forest.
+For this special day, 3rd of June 2023, we invite you to Dwór Wierzenica, located in the small village of Wierzenica, north-east from Poznań. It's a XIX century manor located on the edge of Zielonka forest.
  
 It is a short drive from the center of Poznań. We will organize the transport for those who need it and provide the details soon.
  
