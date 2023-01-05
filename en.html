@@ -49,6 +49,9 @@
   <iframe width="100%;" height="100%;" id="main" src="index.html">
   </iframe>
 
+
+  <div id="loading-animation">Loading...</div>
+
   <!-- Footer -->
   <footer class="footer">
     <button onclick="sendEmail()" class="btn-send-email">
@@ -65,25 +68,36 @@
       let iframe = document.getElementById("main");
       console.log(adr);
       var source = adr + ".html";
+      document.getElementById("side-menu").checked = false;
       iframe.setAttribute('src', source);
 
-      for (let e of document.getElementsByClassName("nav-item")) {
+      /*for (let e of document.getElementsByClassName("nav-item")) {
         e.classList.remove("active")
       }
-      //let o = document.getElementsByName(adr);
-      //o.classList.add("active")
+      let o = document.getElementsByName(adr);
+      o.classList.add("active")*/
+      reloadIframe()
 
-      document.getElementById("side-menu").checked = false;
     };
 
     function sendEmail() {
       window.location.href = 'mailto:magda.murawiecka@gmail.com?subject=Hello&body=Hello :-) Im happy to report that I will be there for your wedding !';
     }
 
-    $('.first-button').on('click', function () {
 
-      $('.animated-icon1').toggleClass('open');
+    const iframe = document.getElementById('main');
+    const loadingAnimation = document.getElementById('loading-animation');
+    function reloadIframe() {
+      let iframe = document.getElementById('main');
+      let loadingAnimation = document.getElementById('loading-animation');
+      loadingAnimation.style.display = 'block';
+      iframe.src = iframe.src;
+    }
+
+    iframe.addEventListener('load', () => {
+      loadingAnimation.style.display = 'none';
     });
+
 
 
   </script>

@@ -65,26 +65,36 @@
       let iframe = document.getElementById("main");
       console.log(adr);
       var source = adr + ".html";
+      document.getElementById("side-menu").checked = false;
       iframe.setAttribute('src', source);
 
-      for (let e of document.getElementsByClassName("nav-item")) {
+      /*for (let e of document.getElementsByClassName("nav-item")) {
         e.classList.remove("active")
       }
-      //let o = document.getElementsByName(adr);
-      //o.classList.add("active")
+      let o = document.getElementsByName(adr);
+      o.classList.add("active")*/
+      reloadIframe()
 
-      document.getElementById("side-menu").checked = false;
     };
+
+
+
+    const iframe = document.getElementById('main');
+    const loadingAnimation = document.getElementById('loading-animation');
+    function reloadIframe() {
+      let iframe = document.getElementById('main');
+      let loadingAnimation = document.getElementById('loading-animation');
+      loadingAnimation.style.display = 'block';
+      iframe.src = iframe.src;
+    }
+
+    iframe.addEventListener('load', () => {
+      loadingAnimation.style.display = 'none';
+    });
 
     function sendEmail() {
       window.location.href = 'mailto:magda.murawiecka@gmail.com?subject=Bonjour&body=Bonjour :-) Je suis heureux d annoncer que je serai là pour votre mariage !';
     }
-
-    $('.first-button').on('click', function () {
-
-      $('.animated-icon1').toggleClass('open');
-    });
-
 
   </script>
 
