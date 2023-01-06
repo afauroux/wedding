@@ -1,5 +1,3 @@
-# How to get there
-
 # by plane
 Cheap direct flights leave regularly from both Paris Beauvais (Ryanair and Wizzair) and Brussels Charleroi (Ryanair). There are also flights from Paris CDG with a change in Warsaw (LOT).
 
