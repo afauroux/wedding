@@ -14,6 +14,7 @@
       display: flex;
       flex-flow: column;
       height: 100%;
+      white-space: nowrap;
     }
   </style>
   <!-- Link css file -->
@@ -63,6 +64,7 @@
 
 
   <script>
+    location.hash = "index"
     addEventListener('hashchange', (event) => { });
     onhashchange = (event) => {
       let adr = location.hash.replace("#", "")
