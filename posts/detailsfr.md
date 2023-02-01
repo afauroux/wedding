@@ -1,1 +1,2 @@
-Les détails arrivent bientôt!
+* A cause de la limite de places à Wierzenica, nous vous prions de bien vouloir laisser vos enfants avec leurs grands-parents (ou quelqu'un d'autre).
+* Nous serions heureux que vous nous partagiez les photos que vous prendrez pendant notre mariage! Nous allons mettre en place un compte sur une des applications dédiés au partage de photos de mariage. Dès que le lien sera près nous le metterons ici (pour être tenu au courant n'oubliez pas de nous envoyer votre email en clickant sur le bouton en bas de page). 
